@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* =============================================First-Navber============================================= */
+        #logo{
+            float: left;
+            padding-top: 9px;
+        }
+        
+        .first-navber {
+            background-color: #FFFFFF;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+            position: fixed;
+            top: 0;
+            margin-top: 0px;
+            padding-top: 10px; 
+            border-bottom: black 2px solid;
+            padding-bottom: 10px;
+        }
+
+        .first-navber > li{
+            display: inline;
+            /* padding-right: 25px; */
+            padding: 0px 30px 0px 0px;
+
+        }
+
+        img{
+            padding: 3px 0px 0px 2px;
+        }
+
+        .first-navber > li:hover{
+            color: #14A800;
+        }
+
+        #Why{
+            padding-right: 372px;
+        }
+        
+        #signup{
+            background-color: #14A800;
+            color: #FFFFFF;
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 10px 13px 10px 13px;
+            width: 100px;
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none;
+            outline: none;
+        }
+
+        /* =============================================Second-Navber============================================= */
+
+        .second-navber {
+            background-color: #FFFFFF;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-size: 14px;
+            padding: 0px 0px 0px 20px;
+            font-weight: 500;
+            position: fixed;
+            top: 40px;
+            /* margin-top: 30px; */
+            padding-top: 20px;
+           padding-bottom: 20px;
+           margin-top: 23px;
+           /* border-bottom: black 2px solid; */
+        }
+
+        .second-navber > li{
+            display: inline;
+           padding-right: 15px;
+           cursor: pointer;
+
+        }
+        .second-navber > li:hover{
+            color: #14A800;
+        }
+        
+        /* =============================================Main-div============================================= */
+        
+        .main-div{
+            float: left;
+            margin: 0px 230px 0px 80px;
+            padding-top: 60px;
+            /* border: black 2px solid; */
+            
+        }
+
+        .under-div{
+            color:#14A800;
+            font-size: 80px;
+            font-weight:700;
+            
+        }
+
+        .main-div > p{
+            font-size: 23px;
+            font-family: Calibri;
+            color: #5E6D55;
+        }
+
+        .main-div-button{
+            background-color: #14A800;
+            color: #FFFFFF;
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 12px 15px 12px 15px;
+            width: 150px;
+            font-size: large;
+            font-family: Calibri;
+            border: none;
+            outline: none;
+           
+        }
+
+        .pic-455{
+            margin-top: 50px;
+            display: flex;
+        }
+
+        /* =============================================Company-Icon============================================= */
+        .Company-Icon{
+            /* padding-left: 45px; */
+            /* border: 2px black solid; */
+            width: 500px;
+            padding: 0px 0px 0px 0px;
+            margin-left: 40px; 
+             
+                      
+            
+       }
+        .Company-Icon >p{
+            color: #9AAA97;
+            padding-left: 45px;
+            font-size: large;
+            font-family: calibri;
+        
+       } 
+        .Company-Icon > ul >li{
+            display:inline;
+       } 
+       .Company-Icon > ul >li>img{
+            width: 90px;
+            height: 40px;
+            padding: 5px;
+       } 
+
+       #icon{
+            font-size: 20px;
+            line-height: 40px;
+       }
+
+       /* =============================================Video-section============================================= */
+       
+       .Video-section{
+            margin: 60px 0px 70px 80px;
+       }
+
+       #capture{
+        float: left;
+        padding-right: 40px;
+        height: 400px;
+        width: 480px;
+                
+       }
+
+       .Video-section > h1{
+            font-size: 40px;
+       }
+
+       .Video-section >h3{
+            font-family: calibri;
+            font-size: 22px;
+            
+            
+       }
+
+       #icon-video-section{
+            float: left;
+            padding-right: 13px;
+            width: 18px;
+            padding-top: 5px;
+       }
+
+       .Video-section >p{
+            color: #5E6D55;
+            font-family: calibri;
+            font-size: 18px;
+            
+       }
+
+       .Sign-up-of-free{
+            background-color: #14A800;
+            color: #FFFFFF;
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 12px 15px 12px 15px;
+            width: 150px;
+            font-size: large;
+            font-family: Calibri;
+            border: none;
+            outline: none;
+            margin-right: 20px;
+       }
+
+       .Learn-how-to-hire{
+            color: #14A800;
+            background-color: #FFFFFF;
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 8px 0px 8px 0px;
+            width: 200px;
+            font-size: large;
+            font-family: Calibri;
+            border: #14A800 solid 2px;
+            
+       }
+       .Learn-how-to-hire:hover{
+            color:#FFFFFF ;
+            background-color: #14A800;
+            cursor: pointer;
+            border: none;
+            outline: none;
+       }
+
+       /* ==================================Browse talent by category===================================== */
+       .browse{
+            margin: 0px 0px 0px 80px;
+            
+       }
+
+       #browse-h{
+            font-size: 42px;
+            margin-bottom: 0px;
+        }
+        #browse-p{
+            font-family: calibri;
+            color:#5E6D55;
+            font-size: 20px;
+        }
+
+        #browse-u{
+            color: #14A800;
+            cursor: pointer;
+        }
+        #browse-u:hover{
+            color: #6ded5d;
+            cursor: pointer;
+        }
+
+        /* ==================================Services-Cards===================================== */
+
+        .card-main-div{
+            /* border: 2px solid black; */
+            
+            margin-left: 65px;
+            
+            
+        }
+        .card-first-div{
+            display:flex;
+        }
+        .card-second-div{
+            display:flex;
+        }
+        .card-under-div{
+            color: #14A800;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            width: 255px;
+            font-family: Calibri;
+            border: #14A800 solid 2px;
+            padding-left: 25px;
+            margin: 12px 12px 12px 12px;
+        }
+        .card-under-div:hover{
+            cursor: pointer;
+            color:#FFFFFF ;
+            background-color: #14A800;
+            border: none;
+            outline: none;
+            
+        }
+        
+        /* =============================================Enterprise Suite======================================  */
+        .Enterprise-Suite-div{
+            border: 5px solid black;
+            display: flex;
+            background-color: #13544E;
+            margin-left: 80px;
+            border-radius: 15px;
+            border: #13544E solid 1px;
+            width: 1205px;
+            margin-top: 70px;
+            margin-bottom: 50px;
+            
+            /* padding-right: 50px; */
+            /* width: 1100px; */
+        }
+
+        .Enterprise-Suite-main{
+            padding: 28px 165px 28px 30px;
+        }
+            
+        
+        .Enterprise-Suite-h1{
+            font-size: 23px;
+            font-family: calibri;
+            /* color: black; */
+            margin-bottom: 16px;
+            color:#FFFFFF;
+        }
+        .Enterprise-Suite-div1{
+            color:#FFFFFF;
+            font-size: 50px;
+            font-weight:700;
+            
+            
+                       
+
+        }
+        .Enterprise-Suite-div2{
+            color:#91E6B3;
+            font-size: 50px;
+            font-weight:700;
+                       
+
+        }
+        .Enterprise-Suite-div-pg{
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: .6px;
+            font-weight: 700;
+            font-family: calibri;
+            color: #FFFFFF;
+        }
+        .Enterprise-Suite-div-icon{
+            width: 19px;
+            float: left;
+            padding-right: 10px;
+        }
+        .Enterprise-Suite-div-icon-p{
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: .6px;
+            font-weight: 700;
+            font-family: calibri;
+            color: #FFFFFF;
+            
+        }
+
+        .Enterprise-Suite-button{
+            color: #14A800;
+            background-color: #FFFFFF;
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 8px 0px 8px 0px;
+            width: 130px;
+            font-size: large;
+            font-family: Calibri;
+            border: none;
+            outline: none;
+            /* border: #14A800 solid 5px; */
+            
+       }
+       .Learn-how-to-hire:hover{
+            color:#FFFFFF ;
+            background-color: #14A800;
+            cursor: pointer;
+            
+       }
+        
+       /* =========================================For clients========================================== */
+
+       .footer {
+        background-color: #001E00;
+        padding: 50px 0 200px;
+        color: #ffffff;
+        border-radius: 15px;
+        margin: 0px 15px 0px 15px;
+        }
+
+        .footer-main-div {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 100px;
+        }
+
+        .footer-manu ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        .footer-manu ul li {
+        margin: 10px 0;
+        }
+
+        .footer-manu ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        }
+
+        .footer-manu ul li a:hover {
+        text-decoration: underline;
+        }
+
+
+
+
+
+
+
+
+
+
+
+   </style>
+</head>
+<body>
+      <!-- =============================================First-Navber=============================================  -->
+      
+      <ul class="first-navber">
+        <li><img  id="logo" width="90px" src="https://cdn.freebiesupply.com/logos/large/2x/upwork-logo-png-transparent.png"  alt="">
+        <li>Find Talent <img width="12px" src="https://cdn-icons-png.flaticon.com/512/159/159119.png" alt=""></li>
+        <li>Find Work <img width="12px" src="https://cdn-icons-png.flaticon.com/512/159/159119.png" alt=""></li>
+        <li id="Why">Why Upwork <img width="12px" src="https://cdn-icons-png.flaticon.com/512/159/159119.png" alt=""></li>
+        <li><input  placeholder="Search..............." type="search"></li>
+        <li>Login</li>
+        <li><button id="signup">Signup</button></li>
+    </ul>
+    <!-- <hr> -->
+    <!-- =============================================Second-Navber=============================================  -->
+    <ul class="second-navber">
+        <li>Development & IT</li>
+        <li>AI Services</li>
+        <li>Design & Creative</li>
+        <li>Sale & Marketing</li>
+        <li>Adim & Customer Support</li>
+        <li>More <img width="12px" src="https://cdn-icons-png.flaticon.com/512/159/159119.png" alt=""></li>
+    </ul>
+            <br><br><br><br><br>
+    <!-- =============================================Main-div=============================================  -->
+    <div class="main-div">
+        <div class="under-div">
+            How work<br>should work
+        </div>
+        <p>Forget the old rules. You can have the best people.<br>Right now. Right here.</p>
+        <button class="main-div-button">Gets Started</button>
+    </div>
+    <div class="pic-455">
+    <img class="pic-455" width="455px" height="380px" src="https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/c_scale,w_580,h_580,f_auto,q_auto,dpr_2.0/brontes/hero/globe@1x.jpg" alt="">
+    </div>
+    <!-- =============================================Company-Icon=============================================  -->
+    <div class="Company-Icon">
+       <p>Trusted by</p>
+        <ul>
+            <li><img  src="https://cdn.freebiesupply.com/logos/large/2x/upwork-logo-png-transparent.png" alt=""></li>
+            <li><img src="https://1000logos.net/wp-content/uploads/2016/11/google-logo.jpg" alt=""></li>
+            <li><img src="https://assets.stickpng.com/images/5842fb8ba6515b1e0ad75b35.png" alt=""></li>
+        </ul>
+    </div>
+
+    <!-- =============================================Video-section=============================================  -->
+    
+    <div class="Video-section">
+        <img id="capture" src="./Capture.PNG" alt="">
+        <h1>Up your work game, it’s easy</h1>
+        <img id="icon-video-section"  src="https://cdn-icons-png.flaticon.com/128/1159/1159633.png" alt="">
+        <h3>No cost to join</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register and browse professionals, explore projects, or even book a consultation.</p>
+        <img id="icon-video-section"  src="https://cdn-icons-png.flaticon.com/128/3378/3378283.png" alt="">
+        <h3>Post a job and hire top talent</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finding talent doesn’t have to be a chore. Post a job or we can search for you!</p>
+        <img id="icon-video-section" src="https://cdn-icons-png.flaticon.com/128/1545/1545289.png" alt="">
+        <h3>Work with the best—without breaking the bank</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upwork makes it affordable to up your work and take advantage of low transaction rates.</p>
+        <button class="Sign-up-of-free">Sign up of free</button><button class="Learn-how-to-hire">Learn how to hire</button>
+    </div>
+
+    <!-- ==================================Browse talent by category===================================== -->
+    <div class="browse">
+            <h1 id="browse-h">Browse talent by category</h1>
+            <p id="browse-p">Looking for work? <u id="browse-u">Browse jobs</u></p>
+    </div>
+
+    <!-- ================================================Cards============================================== -->
+    <div class="card-main-div">
+        <div class="card-first-div">
+            <div class="card-under-div">
+                <h2>Development & IT</h2>
+                <p>4.85/5 1853skills</p>
+            </div>
+            <div class="card-under-div" >
+                <h2>Development & IT</h2>
+                <p>4.85/5 1853skills</p>
+            </div>
+            <div class="card-under-div">
+                <h2>Development & IT</h2>
+                <p>4.85/5 1853skills</p>
+            </div>
+            <div class="card-under-div">
+                <h2>Development & IT</h2>
+                <p>4.85/5 1853skills</p>
+            </div>
+        </div>
+        <div class="card-second-div">
+            <div class="card-under-div">
+                <h2>Development & IT</h2>
+                <p>4.85/5 1853skills</p>
+            </div>
+            <div class="card-under-div">
+                <h2>Development & IT</h2>
+                <p>4.85/5 1853skills</p>
+            </div>
+            <div class="card-under-div">
+                <h2>Development & IT</h2>
+                <p>4.85/5 1853skills</p>
+            </div>
+            <div class="card-under-div">
+                <h2>Development & IT</h2>
+                <p>4.85/5 1853skills</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- =============================================Enterprise Suite====================================== -->
+
+        <div class="Enterprise-Suite-div">
+            <div class="Enterprise-Suite-main">
+                <h1 class="Enterprise-Suite-h1">Enterprise Suite</h1>
+                <div class="Enterprise-Suite-div1">This is how</div>
+                <div class="Enterprise-Suite-div2">good companies <br> find good company.</div>
+                <p class="Enterprise-Suite-div-pg">Access the top 1% of talent on Upwork, and a full suite of hybrid workforce <br> management tools. This is how innovation works now.</p>
+                <img class="Enterprise-Suite-div-icon" src="https://cdn0.iconfinder.com/data/icons/vpn-security-1-3/1024/repair-64.png" alt="">
+                <p class="Enterprise-Suite-div-icon-p">Access expert talent to fill your skill gaps</p>
+                <img class="Enterprise-Suite-div-icon" src="https://cdn3.iconfinder.com/data/icons/kicon-business/24/briefcase_office-64.png" alt="">
+                <p class="Enterprise-Suite-div-icon-p">Control your workflow: hire, classify and pay your talent</p>
+                <img class="Enterprise-Suite-div-icon" src="https://cdn0.iconfinder.com/data/icons/lineo-shopping/100/customer_service-64.png" alt="">
+                <p class="Enterprise-Suite-div-icon-p">Partner with Upwork for end-to-end support</p>
+                <button class="Enterprise-Suite-button">Learn more</button>
+            </div>
+            <div class="Enterprise-Suite-img">
+                <img  width="400px" height="528px" src="https://img.freepik.com/premium-photo/vertical-full-length-portrait-africanamerican-person-with-disability-speaking-microphone-while_236854-35695.jpg?w=360" alt="">
+            </div>
+        </div>
+
+        
+
+                        
+
+            <!-- =========================================For clients========================================== -->
+        
+            
+            <footer class="footer">
+                <div class="footer-main-div">
+                  <div class="footer-manu">
+                    <ul>
+                      <li><a href="#">For Clients</a></li>
+                      <li><a href="#">How to Hire</a></li>
+                      <li><a href="#">Talent Marketplace</a></li>
+                      <li><a href="#">Project Catalog</a></li>
+                      <li><a href="#">Hire an Agency</a></li>
+                      <li><a href="#">Enterprise</a></li>
+                      <li><a href="#">Any Hire</a></li>
+                      <li><a href="#">Contract-to-Hire</a></li>
+                      <li><a href="#">Direct Contracts</a></li>
+                      <li><a href="#">Hire in the USA</a></li>
+                    </ul>
+                  </div>
+              
+                  <div class="footer-manu">
+                    <ul>
+                      <li><a href="#">Freelancer Categories</a></li>
+                      <li><a href="#">Browse Freelancers</a></li>
+                      <li><a href="#">Freelancer in USA</a></li>
+                      <li><a href="#">Freelancer in UK</a></li>
+                      <li><a href="#">Freelancer in Canada</a></li>
+                      <li><a href="#">Freelancer in Australia</a></li>
+                      <li><a href="#">Jobs in USA</a></li>
+                      <li><a href="#">Find Jobs</a></li>
+                    </ul>
+                  </div>
+              
+                  <div class="footer-manu">
+                    <ul>
+                      <li><a href="#">Freelancer</a></li>
+                      <li><a href="#">Browse Jobs</a></li>
+                      <li><a href="#">How it Works</a></li>
+                      <li><a href="#">API</a></li>
+                      <li><a href="#">Enterprise</a></li>
+                      <li><a href="#">Resources</a></li>
+                      <li><a href="#">Hiring Headquarters</a></li>
+                    </ul>
+                  </div>
+              
+                  <div class="footer-manu">
+                    <ul>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Press</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Trust, Safety & Security</a></li>
+                      <li><a href="#">Terms of Service</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Accessibility</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </footer>
+              
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
